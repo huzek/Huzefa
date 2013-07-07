@@ -21,7 +21,7 @@
 
     <script type="text/javascript" src="Scripts/jquery.mobile-1.3.1.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="phonegap-1.2.0.js"></script>
-    
+
 
 
     <script type="text/javascript">
@@ -41,8 +41,8 @@
         });
 
     </script>
-     
-      <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/touchTouch/touchTouch.css" />
     <script src="assets/touchTouch/touchTouch.jquery.js"></script>
     <script src="assets/js/script.js"></script>
@@ -223,7 +223,7 @@
                     <li><a href="#About" class="About1" data-icon="custom" data-transition="slide">About</a></li>
                     <li><a href="#Photos" class="Photos1" data-icon="custom" data-transition="slide">Photos</a></li>
                     <li><a href="#Videos" class="Videos1" data-icon="custom" data-transition="slide">Videos</a></li>
-                    <li><a href="#details" class="Location1" data-icon="custom" data-transition="slide"  data-theme="b">Location</a></li>
+                    <li><a href="#details" class="Location1" data-icon="custom" data-transition="slide" data-theme="b">Location</a></li>
                     <li><a href="#Contact" class="Contact1" data-icon="custom" data-transition="slide">Contact</a></li>
                 </ul>
             </div>
@@ -240,8 +240,38 @@
         <!-- /header -->
         <div data-role="content" data-theme="c">
 
-            <div align="center">
-                <h3>Kuwait</h3>
+            <div class="ui-grid-a" id="restau_infos">
+                <div class="ui-block-a">
+                    <h2>مؤسسة قواعد المفاهيم للتجارة العامة والمقاولات</h2>
+                    <p>حـولي . شـارع ابن خـلدون . مقـابل نـادي المعـاقـين</p>
+                    <p>لـدور 4 مكـتب رقم 14
+ددولة الكويت  عـمارة البـراك </p>
+                </div>
+                <div class="ui-block-b">
+                    <p>
+                        <img src="restau01.jpg" alt="jeannette photo" /></p>
+                    <p><a href="http://www.Buy2best.com" rel="external" data-role="button">See our website</a></p>
+                </div>
+            </div>
+            <!-- /grid-a -->
+            <hr />
+
+            <div class="ui-grid-a" id="contact_infos">
+                <div class="ui-block-a">
+                    <h2>مؤسسة قواعد المفاهيم للتجارة العامة والمقاولات</h2>
+                    <p>حـولي . شـارع ابن خـلدون . مقـابل نـادي المعـاقـين</p>
+                    <p>لـدور 4 مكـتب رقم 14
+ددولة الكويت  عـمارة البـراك </p>
+                </div>
+                <div class="ui-block-b">
+                    <img src="Images/Map.jpg" alt="Buy2best.com" width="80%" height="80%" />
+                    
+                </div>
+            </div>
+            <!-- /grid-a -->
+            <div id="contact_buttons">
+                <a href="https://maps.google.com/maps?q=Buy2best%4029.33852576354393,48.00433695316315&hl=en&sll=29.338526,48.004337&sspn=0.021212,0.038581&t=m&z=16&iwloc=A" data-role="button" data-icon="maps">Find us on Google Maps </a>
+                <a href="tel:+96522652303" data-role="button" data-icon="tel">Call us </a>
             </div>
         </div>
         <!-- /content -->
@@ -256,6 +286,24 @@
                 </ul>
             </div>
         </div>
+        <script type="text/javascript">
+
+            $('#restau').live('pageinit', function (event) {
+                var SelectedOptionClass = $('option:selected').attr('class');
+                $('div.ui-select').addClass(SelectedOptionClass);
+
+                $('#note_utilisateur').live('change', function () {
+                    $('div.ui-select').removeClass(SelectedOptionClass);
+
+                    SelectedOptionClass = $('option:selected').attr('class');
+                    $('div.ui-select').addClass(SelectedOptionClass);
+
+                });
+
+
+            });
+
+	</script>
     </div>
     <!-- /page -->
 </body>
