@@ -1,19 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns="http://www.w3.org/ns/widgets"
         xmlns:gap="http://phonegap.com/ns/1.0"
         id="Huzek"
         versionCode="10"
         version="2.0.0">
 
-    <name>Huzefa</name>
+  <name>Huzefa</name>
 
-    <description>
-        Huzefa Tunkiwala
-    </description>
+  <description>
+    Huzefa Tunkiwala
+  </description>
 
-    <author href="http://instagram.com/buy2bestcom" email="huzek53@gmail.com">
-      Huzefa Tunkiwala
-    </author>
+  <author href="http://instagram.com/buy2bestcom" email="huzek53@gmail.com">
+    Huzefa Tunkiwala
+  </author>
 
   <feature name="http://api.phonegap.com/1.0/device" />
 
@@ -58,36 +57,35 @@ permission on your app, which PhoneGap requires.
 
 
 
-    <!-- iOS icons -->
-    <icon src="Images/ICON/FAVICON_57.png" width="57" height="57"/>
-    <icon src="Images/ICON/FAVICON_72.png" gap:platform="ios" width="72" height="72"/>
-    <icon src="Images/ICON/FAVICON_144.png" width="114" height="114"/>
+  <!-- iOS icons -->
+  <icon src="Images/ICON/FAVICON_57.png" width="57" height="57"/>
+  <icon src="Images/ICON/FAVICON_72.png" gap:platform="ios" width="72" height="72"/>
+  <icon src="Images/ICON/FAVICON_144.png" width="114" height="114"/>
 
-    <!-- Android icons -->
-    <icon src="Images/ICON/android/ldpi_72.png" gap:platform="android" gap:density="ldpi"/>
-    <icon src="Images/ICON/android/mdpi.png" gap:platform="android" gap:density="mdpi"/>
-    <icon src="Images/ICON/android/hdpi.png" gap:platform="android" gap:density="hdpi"/>
-    <icon src="Images/ICON/android/xhdpi.png" gap:platform="android" gap:density="xhdpi"/>
+  <!-- Android icons -->
+  <icon src="Images/ICON/android/ldpi_72.png" gap:platform="android" gap:density="ldpi"/>
+  <icon src="Images/ICON/android/mdpi.png" gap:platform="android" gap:density="mdpi"/>
+  <icon src="Images/ICON/android/hdpi.png" gap:platform="android" gap:density="hdpi"/>
+  <icon src="Images/ICON/android/xhdpi.png" gap:platform="android" gap:density="xhdpi"/>
 
-    <!-- iOS splash screen -->
-    <gap:splash src="splash/ios/Default.png" width="320" height="480"/>
-    <gap:splash src="splash/ios/Default@2x.png" width="640" height="960"/>
+  <!-- iOS splash screen -->
+  <gap:splash src="splash/ios/Default.png" width="320" height="480"/>
+  <gap:splash src="splash/ios/Default@2x.png" width="640" height="960"/>
 
-    <!-- Android splash screen -->
-  
+  <!-- Android splash screen -->
+
   <gap:splash src="splash/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
   <gap:splash src="splash/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
   <gap:splash src="splash/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
   <gap:splash src="splash/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
-  
-  
-  	  
+
+
+
   <!-- White-list of urls available to open -->
 
-    <access origin="http://facebook.com" subdomains="true"/>
+  <access origin="http://facebook.com" subdomains="true"/>
 
 
-    <!-- Using ChildBrowser plugin -->
-    <gap:plugin name="ChildBrowser" />
-  
+  <!-- Using ChildBrowser plugin -->
+  <gap:plugin name="ChildBrowser" />
 </widget>
